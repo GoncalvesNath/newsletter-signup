@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <link rel="stylesheet" href="reset.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./styles/reset.css">
+  <link rel="stylesheet" href="./styles/style.css">
   
   <title>Newsletter sign-up form with success message</title>
 
@@ -20,31 +20,39 @@
   <main>
     <img src="./assets/images/illustration-sign-up-mobile.svg" alt="">
     <!-- Sign-up form start -->
-    <h1>Stay updated!</h1>
-    
-    <p>Join 60,000+ product managers receiving monthly updates on:</p>
-    
-    <p>Product discovery and building what matters</p>
-    <p>Measuring to ensure updates are a success</p>
-    <p>And much more!</p>
+    <section>
+      <h1>Stay updated!</h1>
+      
+      <p>Join 60,000+ product managers receiving monthly updates on:</p>
+      
+      <p><svg xmlns="http://www.w3.org/2000/svg" width="20" height="15" viewBox="0 0 21 21"><g fill="none"><circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155"/><path stroke="#FFF" stroke-width="2" d="M6 11.381 8.735 14 15 8"/></g></svg>
+        Product discovery and building what matters
+      </p>
+      <p><svg xmlns="http://www.w3.org/2000/svg" width="20" height="15" viewBox="0 0 21 21"><g fill="none"><circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155"/><path stroke="#FFF" stroke-width="2" d="M6 11.381 8.735 14 15 8"/></g></svg>
+        Measuring to ensure updates are a success</p>
+      <p><svg xmlns="http://www.w3.org/2000/svg" width="20" height="15" viewBox="0 0 21 21"><g fill="none"><circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155"/><path stroke="#FFF" stroke-width="2" d="M6 11.381 8.735 14 15 8"/></g></svg>
+        And much more!
+      </p>
+      
+      <form action="login" method="post" autocomplete="on">
+        <label for="email-label">Email address</label><br>
+        <input type="email" placeholder="email@company.com"></input><br>
+        <input type="submit" value="Subscribe to monthly newsletter">
+      </form>
+      <!-- Sign-up form end -->
 
-    <label for="email">Email address</label><br>
-    <input type="email" placeholder="email@company.com"></input><br>
-    <input type="submit" value="Subscribe to monthly newsletter">
-    <!-- Sign-up form end -->
-
-
-    <!-- Success message start 
-    Thanks for subscribing!
-    A confirmation email has been sent to ash@loremcompany.com.
-    Please open it and click the button inside to confirm your subscription.
-    Dismiss message -->
-    <!-- Success message end -->
-    
-    <footer class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="https://github.com/GoncalvesNath">Nathalia Gonçalves</a>.
-    </footer>
+      <!-- Success message start
+      Thanks for subscribing!
+      A confirmation email has been sent to ash@loremcompany.com.
+      Please open it and click the button inside to confirm your subscription.
+      Dismiss message -->
+      <!-- Success message end -->
+      
+      <footer class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="https://github.com/GoncalvesNath">Nathalia Gonçalves</a>.
+      </footer>
+    </section>
 
   </main>
 </body>
