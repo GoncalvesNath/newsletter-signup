@@ -13,6 +13,7 @@
 
   <link rel="stylesheet" href="./styles/reset.css">
   <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./styles/media-query.css">
 
   <title>Newsletter sign-up form with success message</title>
 
@@ -31,8 +32,9 @@
     <article>
       <section>
         <img class="img-login-mobile" src="./assets/images/illustration-sign-up-mobile.svg" alt="">
-        <h1>Stay updated!</h1>
+        
         <div class="form-container">
+          <h1>Stay updated!</h1>
           <p>Join 60,000+ product managers receiving monthly updates on:</p>
           <p><svg xmlns="http://www.w3.org/2000/svg" width="20" height="15" viewBox="0 0 21 21">
               <g fill="none">
@@ -58,13 +60,13 @@
             And much more!
           </p>
           <form action="login" method="post" autocomplete="on">
-            <label for="email-label">Email address</label><br>
+            <label for="email-label">Email address</label>
             <input class="email-input" type="email" placeholder="email@company.com"></input><br>
             <input class="btn-submit" type="submit" value="Subscribe to monthly newsletter">
           </form>
         </div>
-        
         <!-- Sign-up form end -->
+
         <!-- Success message start
         Thanks for subscribing!
         A confirmation email has been sent to ash@loremcompany.com.
