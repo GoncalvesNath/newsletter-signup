@@ -14,18 +14,16 @@ section {
     align-items: center;
     justify-content: center;
     background-color: var(--white);
+    min-width: 600px;
     width: 70%;
     height: 70%;
     border-radius: 20px;
 }
 
-.img-login{
-    
-    background-image: url('/assets/images/illustration-sign-up-desktop.svg');
-    background-repeat: no-repeat;
-    background-position: right;
+#img-login{
     width: 40%;
-    padding: 0 20px 0 0;
+    padding: 10px;
+    
 }
 
 footer{
