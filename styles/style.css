@@ -7,27 +7,26 @@
     --white: #ffffff;
     /* fonts */
     --font-family: "Roboto", sans-serif;
+    --footer-height: 10px;
+    --footer-margin-top: 20px;
+    --padding-card: 24px;
 }
 
-/* main {
-    width: 100%;
-    height: 100%;
-    background-color: var(--white);
-    display: flex;
-    flex-direction: column;
-    position: absolute;
+main {
+    width: 100vw;
+    height: 100vh;
+}
 
-} */
-section{
+section {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 100%;
+    height: 95%;
 }
 
 
 
-#img-login{
+#img-login {
     /* background-image: url('/assets/images/illustration-sign-up-mobile.svg'); */
     width: 100vw;
 }
@@ -44,12 +43,12 @@ h1 {
     font-family: var(--font-family);
     font-size: 35px;
     font-weight: 700;
-    color:var(--dark-slate-grey);
+    color: var(--dark-slate-grey);
     /* margin: 20px 20px 0; */
-    
+
 }
 
-p{
+p {
     text-align: justify;
     justify-content: start;
     font-family: var(--font-family);
@@ -59,7 +58,7 @@ p{
     /* margin: 18px; */
 }
 
-form{
+form {
     display: flex;
     flex-direction: column;
     /* align-items: center; */
@@ -75,15 +74,15 @@ label {
     text-align: start;
 }
 
-form > input{
+form>input {
     display: flex;
     justify-content: center;
     border-radius: 7px;
 
 }
 
-.email-input{
-    
+.email-input {
+
     border: 1px solid #D4D4D4;
     height: 55px;
     outline: none;
@@ -91,31 +90,86 @@ form > input{
 }
 
 
-.btn-submit{
+.btn-submit {
     font-size: 15px;
     font-weight: bold;
     border: none;
     width: 100%;
-    height: 55px; 
-    background-color:  var(--dark-slate-grey) ;
+    height: 55px;
+    background-color: var(--dark-slate-grey);
     color: var(--white);
     padding: 0 15px 0 15px;
 }
 
-.btn-submit:hover{
-    background: linear-gradient(90deg, rgba(255,98,87,1) 50%, rgba(255,162,48,1) 100%);
+.btn-submit:hover {
+    background: linear-gradient(90deg, rgba(255, 98, 87, 1) 50%, rgba(255, 162, 48, 1) 100%);
 }
 
-footer{
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    background-color: white;
+    border-radius: 15px;
+    text-align: justify;
+    width: calc(100% - (var(--padding-card) * 2));
+    height: calc(100% - var(--footer-height) - var(--footer-margin-top));
+    padding-left: var(--padding-card);
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: calc(100% - (var(--padding-card) * 2));
+}
+
+.card-content > p {
+    font-size: 16px;
+    line-height: 1.35;
+    text-align: left;
+}
+
+.card-content > p > span {
+    font-weight: 700;
+}
+
+#success-message {
+    font-size: 40px;
+    text-align: left;
+}
+
+.btn-dismiss {
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    width: calc(100% - (var(--padding-card) * 2));
+    height: 55px;
+    background-color: var(--dark-slate-grey);
+    color: var(--white);
+    border-radius: 7px;
+    position: absolute;
+    margin-bottom: 20px;
+    bottom: 0;
+    
+}
+
+.btn-dismiss:hover {
+    background: linear-gradient(90deg, rgba(255, 98, 87, 1) 50%, rgba(255, 162, 48, 1) 100%);
+}
+
+footer {
     text-align: center;
-    text-decoration: none;
     color: var(--charcoal-grey);
     font-size: 10px;
     width: 100%;
+    height: var(--footer-height);
     position: absolute;
-    margin-top: 20px;
+    margin-top: var(--footer-margin-top);
 }
-a{
+
+a {
     text-decoration: none;
     color: var(--charcoal-grey);
 }

@@ -17,69 +17,81 @@
 
   <title>Newsletter sign-up form with success message</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <!-- <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style> -->
 </head>
 
 <body>
 
   <main>
-    
-    <!-- Sign-up form start -->
-      <section>
-        <img id="img-login" src="./assets/images/illustration-sign-up-mobile.svg" alt="">
-        
-        <div class="form-container">
-          <h1>Stay updated!</h1>
-          <p>Join 60,000+ product managers receiving monthly updates on:</p>
-          <p><svg xmlns="http://www.w3.org/2000/svg" width="20" height="15" viewBox="0 0 21 21">
-              <g fill="none">
-                <circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155" />
-                <path stroke="#FFF" stroke-width="2" d="M6 11.381 8.735 14 15 8" />
-              </g>
-            </svg>
-            Product discovery and building what matters
-          </p>
-          <p><svg xmlns="http://www.w3.org/2000/svg" width="20" height="15" viewBox="0 0 21 21">
-              <g fill="none">
-                <circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155" />
-                <path stroke="#FFF" stroke-width="2" d="M6 11.381 8.735 14 15 8" />
-              </g>
-            </svg>
-            Measuring to ensure updates are a success</p>
-          <p><svg xmlns="http://www.w3.org/2000/svg" width="20" height="15" viewBox="0 0 21 21">
-              <g fill="none">
-                <circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155" />
-                <path stroke="#FFF" stroke-width="2" d="M6 11.381 8.735 14 15 8" />
-              </g>
-            </svg>
-            And much more!
-          </p>
-          <form action="login" method="post" autocomplete="on">
-            <label for="email-label">Email address</label>
-            <input class="email-input" type="email" placeholder="email@company.com"></input><br>
-            <input class="btn-submit" type="submit" value="Subscribe to monthly newsletter">
-          </form>
-        </div>
-        <!-- Sign-up form end -->
 
-        <!-- Success message start -->
-        <!-- <h1 id="subscription">Thanks for subscribing!</h1>
-        <p>A confirmation email has been sent to <span id="email-span">.</span>
-        Please open it and click the button inside to confirm your subscription.</p>
-        <input class="btn-dismiss" type="button" value="Dismiss message">
-        Success message end -->
-      </section>
-    
+    <!-- Sign-up form start -->
+    <section id="signup-section" style="display: none;">
+      <img id="img-login" src="./assets/images/illustration-sign-up-mobile.svg" alt="">
+
+      <div class="form-container">
+        <h1>Stay updated!</h1>
+        <p>Join 60,000+ product managers receiving monthly updates on:</p>
+        <p><svg xmlns="http://www.w3.org/2000/svg" width="20" height="15" viewBox="0 0 21 21">
+            <g fill="none">
+              <circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155" />
+              <path stroke="#FFF" stroke-width="2" d="M6 11.381 8.735 14 15 8" />
+            </g>
+          </svg>
+          Product discovery and building what matters
+        </p>
+        <p><svg xmlns="http://www.w3.org/2000/svg" width="20" height="15" viewBox="0 0 21 21">
+            <g fill="none">
+              <circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155" />
+              <path stroke="#FFF" stroke-width="2" d="M6 11.381 8.735 14 15 8" />
+            </g>
+          </svg>
+          Measuring to ensure updates are a success</p>
+        <p><svg xmlns="http://www.w3.org/2000/svg" width="20" height="15" viewBox="0 0 21 21">
+            <g fill="none">
+              <circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155" />
+              <path stroke="#FFF" stroke-width="2" d="M6 11.381 8.735 14 15 8" />
+            </g>
+          </svg>
+          And much more!
+        </p>
+        <form id="subscription-form" method="post" autocomplete="on">
+          <label for="email-label">Email address</label>
+          <input class="email-input" id="email" type="email" placeholder="email@company.com" required>
+          <span id="error-message" style="display: none;">Valid email required</span></input><br>
+          <input class="btn-submit" type="submit" value="Subscribe to monthly newsletter">
+        </form>
+      </div>
+    </section>
+    <!-- Sign-up form end -->
+
+    <!-- Success message start -->
+    <div id="success-subscription" class="card">
+      <div class="card-content">
+        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+          <defs>
+            <linearGradient id="a" x1="100%" x2="0%" y1="0%" y2="100%">
+              <stop offset="0%" stop-color="#FF6A3A" />
+              <stop offset="100%" stop-color="#FF527B" />
+            </linearGradient>
+          </defs>
+          <g fill="none">
+            <circle cx="32" cy="32" r="32" fill="url(#a)" />
+            <path stroke="#FFF" stroke-width="4" d="m18.286 34.686 8.334 7.98 19.094-18.285" />
+          </g>
+        </svg>
+        <h1 id="success-message">Thanks for subscribing!</h1>
+        <p>A confirmation email has been sent to <span id="email-span"></span>.
+          Please open it and click the button inside to confirm your subscription.</p>
+      </div>
+      <input class="btn-dismiss" type="button" value="Dismiss message" onclick="dismissMessage()">
+    </div>
+    <!-- Success message end -->
+
     <footer class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
       Coded by <a href="https://github.com/GoncalvesNath">Nathalia Gonçalves</a>.
     </footer>
-    <script src="/script.js"></script>
   </main>
+  <script defer src="/script.js"></script>
 </body>
 
 </html>
