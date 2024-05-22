@@ -24,7 +24,7 @@
   <main>
 
     <!-- Sign-up form start -->
-    <section id="signup-section" style="display: none;">
+    <section id="signup-section">
       <img id="img-login" src="./assets/images/illustration-sign-up-mobile.svg" alt="">
 
       <div class="form-container">
@@ -53,10 +53,13 @@
           </svg>
           And much more!
         </p>
-        <form id="subscription-form" method="post" autocomplete="on">
-          <label for="email-label">Email address</label>
-          <input class="email-input" id="email" type="email" placeholder="email@company.com" required>
-          <span id="error-message" style="display: none;">Valid email required</span></input><br>
+        <form id="subscription-form" autocomplete="off">
+          <div class="email-text">
+            <label for="email-label">Email address</label>
+            <span id="error-message" style="display: none;">Valid email required</span>
+          </div>
+          <input class="email-input" id="email" type="text" placeholder="email@company.com" required>
+          </input><br>
           <input class="btn-submit" type="submit" value="Subscribe to monthly newsletter">
         </form>
       </div>
@@ -64,7 +67,7 @@
     <!-- Sign-up form end -->
 
     <!-- Success message start -->
-    <div id="success-subscription" class="card">
+    <div id="success-subscription" class="card" style="display: none;">
       <div class="card-content">
         <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
           <defs>
@@ -86,10 +89,10 @@
     </div>
     <!-- Success message end -->
 
-    <footer class="attribution">
+    <!-- <footer class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
       Coded by <a href="https://github.com/GoncalvesNath">Nathalia Gonçalves</a>.
-    </footer>
+    </footer> -->
   </main>
   <script defer src="/script.js"></script>
 </body>

@@ -38,15 +38,16 @@
         height: 45%;
         border-radius: 32px;
         padding-left: 50px;
-        padding-top: 40px;
+        padding-top: 30px;
     }
 
     #success-message {
-        font-size: 52px;
+        font-size: 35px;
     }
 
     .btn-dismiss {
         position: relative;
+        height: 55px;
     }
 
     footer {
