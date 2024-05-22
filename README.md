@@ -33,13 +33,13 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](/assets/images/newsletter-signup-form.gif)
 
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [GitHub](https://github.com/GoncalvesNath/newsletter-signup)
+- Live Site URL: [Vercel](https://newsletter-signup-five-xi.vercel.app/)
 
 ### Built with
 
